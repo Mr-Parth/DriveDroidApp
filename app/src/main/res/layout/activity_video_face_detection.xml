@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoFaceDetectionActivity"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.Drive_Droid.androidfacedetection.CameraPreview
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+
+            android:background="@color/colorPrimary"
+            >
+
+            <com.Drive_Droid.androidfacedetection.GraphicOverlay
+                android:id="@+id/faceOverlay"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+           />
+
+
+        </com.Drive_Droid.androidfacedetection.CameraPreview>
+        <TextView
+            android:id="@+id/txtCurrentSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="110dp"
+            android:textColor="@color/colorAccent"
+
+            android:layout_marginLeft="70dp"
+            android:layout_alignParentBottom="true"
+
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:background="@color/colorPrimary"
+            android:alpha="0.7"
+             />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
